@@ -1,6 +1,0 @@
-# Emacs Notes
-
-## Hooks
- A hook is a variable which holds the list of functions to call. There are two types of hooks in emacs:
-    > Normal hook
-    > Abnormal hook
