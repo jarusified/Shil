@@ -1,0 +1,13 @@
+# Emacs Cheatsheet
+
+## Shortcuts
+- C-c C-z : Spawns a python interpreter.
+- C-x m   : Start emacs Shell
+
+## Neotree shortcuts
+- n       : next line
+- p       : previous line
+- g       : Refresh
+- SPC RET : Select
+- C-c C-n : New file or directory
+- C-c C-d : Delete file or directory
