@@ -6,7 +6,7 @@
 * Two or more string literals next to each other are automatically concatenated. 
 * Immutable vs mutable:
   ```
-	Immutable : String, 
+	Immutable : String, Tuples
 	mutable   : Lists
 	
   ```
@@ -65,4 +65,27 @@ executed when the loop terminates through exhaustion of the list.
 	  
 	  # 5 will be printed.
   ```	  
-* 
+* **kwargs contains a dictionary of parameters. 
+
+* myfunction.__doc__ -> provides the documentation of the function.
+* myfunction.__annotations__ -> provides optional metadata
+* List comprehensions:
+  They are used as a concise way to create lists. 
+  
+``` 
+	squares = [x**2 for x in range(10)]
+```
+  The initial expression in a list comprehension can be any arbitrary expression, including another list comprehension.
+
+* Del & pop:
+  del statement can be used to remove slices of list or even clear the entire list. pop() removes one element.
+  
+* Tuples are comma separated values. 
+* enumerate() function retrieves the index and value
+```
+	for i, v in enumerate(['a','b','c']):
+		print(i,v)
+```
+* We can loop over using enumerate(), sorted(), reversed(), etc.
+
+* Module's name can be changed using __name__.
