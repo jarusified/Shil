@@ -41,8 +41,8 @@ Code swarm is a project done to visualize the commit history of projects based o
 ### Interface
 
 * Trace - data output from MPE after application run
-* Event - an instance in MPI function call
-* Process - initiator of MPI function calls
+* Event - an instance in MPI function calls.
+* Process - initiator of MPI function calls.
 * Time 
 
 Tilling : 
@@ -57,14 +57,15 @@ The animation window is split into segments for cluster of processes to be accom
 #### Dynamic design
 The paper uses a sliding time window on the data set moving at a constant speed. The speed variables can be adjusted by the user. The particles travel upwards based on the amount of time they have been alive. When it reaches the maximum event duration, it fades away. It also fades at a 2 sec timer so that the visualisation is prominent for short lived particles. The animation may be paused and the user can hover over particles and obtain the information about the MPI function call. Once the particles fade away, they are still rendered on the screen at a low opacity. The opacity is varied logarithmically. The user is also given an option to clear the faded or background buffer to increase the usability. 
 
+
+### Results
+The project is run on data from two super computers, named Franklin and Kraken. Franklin had a smaller matrix sizes to yeild reasonable execution times. Kraken on the other hand had a larger communication and larger trace files with more temporal gaps. The mathematical operations like Matrix inversion, Cholesky Decomposition and eigenproblem are being analysed. They collected traces from two functions "pdsyevd" and "pdsyev" and compared the behaviours between each other. "pdsyevd" is based on QR algorithm and "pdsyev" is a parallel algorithm. The Matrix multiplication example shows that the system consume a lot of communication for the comparison operation 
+
 ### MPI
 MPI is an interface designed for message passing model of parallel programming. 
 
 A communicator is a group of processes that have the ability to communicate with each other. The communication is based on the unique rank assigned for each process. 
 
-Paper starts with a critical question of whether animations are needed provide accurate visualizations. 
-
-### Parallel execution trace analysis:
 
 ## Links found: 
 [Out of core visualisation](http://www.sci.utah.edu/~abe/massive06/course_notes-wagner_correa.pdf)
@@ -73,3 +74,4 @@ Paper starts with a critical question of whether animations are needed provide a
 
 [Time Tunnel](http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=1521058)
 
+ 
