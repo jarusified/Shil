@@ -95,3 +95,8 @@ The case study is made to eliminate the problem of visualizing file I/O or memor
 
 * Merge trees are a topological structure that has been used in large combustion simulations. The algorithm relies on a global gather -scatter approach.
 * The case study is done on two sub-cases, 1024 and 16384 processes. 
+* The tool identifies a possible problem and it was reported to the merge tree developers and they changed their implementation 
+
+#### Laser plasma interactions
+* pF3D is a highly scalable parallel application used to study laser plasma interactions in experiments. pF3D involves a nearest-neighbor exchange where each process communicates with 6 nearest neighbors in 3D process grid. 
+* They compare a round-robin mapping technique and default mapping to reduce the lateness being exhibited the overall performance. 
