@@ -100,3 +100,13 @@ The case study is made to eliminate the problem of visualizing file I/O or memor
 #### Laser plasma interactions
 * pF3D is a highly scalable parallel application used to study laser plasma interactions in experiments. pF3D involves a nearest-neighbor exchange where each process communicates with 6 nearest neighbors in 3D process grid. 
 * They compare a round-robin mapping technique and default mapping to reduce the lateness being exhibited the overall performance. 
+
+#### Insights:
+
+* The idea of introducing logical time and visualising based on it makes more sense for distributed systems especially, where global physical time is non-existent. This helps in finding some crucial causalities in different projects. 
+* Future work could be to experiment visualistions based on other time concepts introduced by lamport such as virtual time. Time warping mechanism can be incorporated.
+* Dynamic time warping can be used to find optimal alignment between two time series. [FastDTW](https://pdfs.semanticscholar.org/05a2/0cde15e172fc82f32774dd0cf4fe5827cad2.pdf) introduces an approximation of DTW which makes it linear. 
+* The paper doesnt provide what their future goals with the project are. 
+* Like [Paragraph](http://csar-web.web.engr.illinois.edu/software/paragraph/userguide.pdf), the "playback" feature can be incorporated. Various other minute features can be implemented such as magnification, smoothing interval, pause function. 
+* More clustering algorithms can be used from [Massively scalable clustering](http://csar-web.web.engr.illinois.edu/software/paragraph/userguide.pdf). 
+* [Stat](http://paradyn.org/STAT/STAT.html) produces call graphs for each function, This could be done very easily by implementing a click operation on each block providing its call graph. 
